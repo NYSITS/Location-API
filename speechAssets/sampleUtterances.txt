@@ -1,0 +1,4 @@
+GetLocationIntent what's my address
+GetLocationIntent what's my location
+GetLocationIntent what's my latitude
+GetLocationIntent what's my longitude

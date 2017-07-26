@@ -1,0 +1,190 @@
+---------------------------- LIST_OF_OFFICE_NAMES ----------------------------
+oswego
+niagara falls
+belmont
+greece
+deposit
+brooklyn north
+little valley
+ithaca
+wappingers falls
+fulton
+binghamton
+williamsville
+south manhattan
+schoharie
+brooklyn south
+elmira
+brewster
+newburgh
+millbrook
+gouverneur
+endicott
+ulster county mobile
+huntington
+cheektowaga
+north syracuse
+orchard park
+penn yan
+old forge
+amherst
+pulaski
+hauppauge
+lowville
+dansville
+staten island
+jamaica
+fort edward
+olean
+medford
+harlem
+delevan
+lower manhattan
+herkimer
+poughkeepsie
+lake george
+monroe county metro
+springfield gardens
+coney island
+clifton park
+geneva
+schenectady
+cooperstown
+rome
+license express
+canandaigua
+bronx
+buffalo vehicle safety
+massapequa
+lockport
+midtown manhattan
+yonkers
+norwich
+sidney
+johnstown
+elizabethtown
+wampsville
+peekskill
+north tonawanda
+garden city
+wilton
+middletown
+buffalo
+monroe county eastside
+monticello
+latham
+margaretville
+albion
+waterloo
+albany
+monroe county westside
+mayville
+dunkirk
+bath
+riverhead
+plattsburgh
+cortland
+massena
+troy
+delhi
+ticonderoga
+malone
+hudson
+lake pleasant
+auburn
+jamaica vehicle safety
+geneseo
+north manhattan
+north syracuse vehicle safety
+flushing
+ballston spa
+utica
+ogdensburg
+syracuse
+white plains
+hornell
+fonda
+pawling
+beacon
+watkins glen
+melville
+broome county
+watertown
+oneonta
+warsaw
+corning
+canton
+angola
+saranac lake
+kingston
+port jefferson
+lyons
+catskill
+bethpage
+west haverstraw
+jamestown
+batavia
+port jervis
+
+---------------------------- LIST_OF_COUNTY_NAMES ----------------------------
+albany county
+allegany county
+bronx county
+broome county
+cattaraugus county
+cayuga county
+chautauqua county
+chemung county
+chenango county
+clinton county
+columbia county
+cortland county
+delaware county
+dutchess county
+erie county
+essex county
+franklin county
+fulton county
+genesee county
+greene county
+hamilton county
+herkimer county
+jefferson county
+kings county
+lewis county
+livingston county
+madison county
+monroe county
+montgomery county
+nassau county
+new york county
+niagara county
+oneida county
+onondaga county
+ontario county
+orange county
+orleans county
+ostego county
+oswego county
+putnam county
+queens county
+rensselaer county
+richmond county
+rockland county
+saratoga county
+schenectady county
+schoharie county
+schuyler county
+seneca county
+saint lawrence county
+steuben county
+suffolk county
+sullivan county
+tompkins county
+ulster county
+warren county
+washington county
+wayne county
+westchester county
+wyoming county
+yates county

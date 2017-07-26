@@ -1,0 +1,117 @@
+WhatsNewIntent what's new
+WhatsNewIntent what is new
+WhatsNewIntent update me
+WhatsNewIntent update me on what's new
+WhatsNewIntent update me on what is new
+WhatsNewIntent anything new
+WhatsNewIntent any new info
+WhatsNewIntent any new information
+
+MoreInfoIntent more info
+MoreInfoIntent more information
+MoreInfoIntent i would like more info
+MoreInfoIntent i would like more information
+
+AvailableCountiesIntent what counties can i ask about
+AvailableCountiesIntent what are the available counties
+AvailableCountiesIntent what are the counties in new york
+AvailableCountiesIntent what are the counties in new york state
+AvailableCountiesIntent what are the new york counties
+AvailableCountiesIntent what are the new york state counties
+
+CountySearchIntent {County}
+CountySearchIntent what offices are in {County}
+CountySearchIntent what dmv offices are in {County}
+CountySearchIntent what are the offices in {County}
+CountySearchIntent what are the dmv offices in {County}
+CountySearchIntent is there an office in {County}
+CountySearchIntent is there a dmv office in {County}
+CountySearchIntent list of offices in {County}
+CountySearchIntent list of dmv offices in {County}
+CountySearchIntent give me a list of offices in {County}
+CountySearchIntent give me a list of dmv offices in {County}
+CountySearchIntent what offices are located in {County}
+CountySearchIntent what dmv offices are located in {County}
+
+OfficeIntent tell me about the {Office} dmv
+OfficeIntent tell me about the {Office} office
+OfficeIntent info on the {Office} dmv
+OfficeIntent info on the {Office} office
+OfficeIntent information on the {Office} dmv
+OfficeIntent information on the {Office} office
+
+LocationIntent where is the {Office} dmv
+LocationIntent where is the {Office} office
+LocationIntent where is the {Office} dmv located
+LocationIntent where is the {Office} office located
+
+HoursIntent what are the hours for the {Office} dmv
+HoursIntent what are the hours for the {Office} office
+HoursIntent when is the {Office} dmv open
+HoursIntent when is the {Office} office open
+HoursIntent hours of operation for the {Office} dmv
+HoursIntent hours of operation for the {Office} office
+
+SettingsIntent quiz settings
+SettingsIntent what are the quiz settings
+SettingsIntent what are the settings for the quiz
+SettingsIntent bring up quiz settings
+SettingsIntent bring up the quiz settings
+
+SetGameLengthIntent set game length to {Number}
+SetGameLengthIntent set the game length to {Number}
+SetGameLengthIntent change game length to {Number}
+SetGameLengthIntent change the game length to {Number}
+SetGameLengthIntent adjust game length to {Number}
+SetGameLengthIntent adjust the game length to {Number}
+SetGameLengthIntent ask {Number} questions
+SetGameLengthIntent ask {Number} of questions
+SetGameLengthIntent ask {Number} questions per round
+SetGameLengthIntent ask {Number} of questions per round
+SetGameLengthIntent ask {Number} questions per game
+SetGameLengthIntent ask {Number} of questions per game
+SetGameLengthIntent ask {Number} questions per quiz
+SetGameLengthIntent ask {Number} of questions per quiz
+
+WhichQuizIntent quiz me
+WhichQuizIntent give me a quiz
+WhichQuizIntent start a quiz
+WhichQuizIntent start a new quiz
+WhichQuizIntent new quiz
+WhichQuizIntent test me
+
+DriverQuizIntent driver
+DriverQuizIntent driver permit
+DriverQuizIntent driver permit test
+DriverQuizIntent driver test
+DriverQuizIntent driver's test
+DriverQuizIntent driver's permit
+DriverQuizIntent driver's permit test
+
+MotorQuizIntent motorcycle
+MotorQuizIntent motorcycle permit
+MotorQuizIntent motorcycle permit test
+
+NumberIntent {Number}
+NumberIntent the answer is {Number}
+NumberIntent my answer is {Number}
+NumberIntent is the answer {Number}
+NumberIntent i think it's {Number}
+NumberIntent i think it is {Number}
+NumberIntent i know it's {Number}
+NumberIntent i know it is {Number}
+
+DontKnowIntent i don't know
+DontKnowIntent i do not know
+DontKnowIntent i dunno
+DontKnowIntent dunno
+DontKnowIntent i'm not sure
+DontKnowIntent i am not sure
+DontKnowIntent i don't know the answer
+DontKnowIntent i do not know the answer
+DontKnowIntent i don't know what the answer is
+DontKnowIntent i do not know what the answer is
+DontKnowIntent i don't know that one
+DontKnowIntent i do not know that one
+DontKnowIntent i don't know this one
+DontKnowIntent i do not know this one

@@ -1,0 +1,103 @@
+{
+  "intents": [
+    {
+      "intent": "WhatsNewIntent"
+    },
+    {
+      "intent": "MoreInfoIntent"
+    },
+    {
+      "intent": "OfficeSearchIntent"
+    },
+    {
+      "intent": "AvailableCountiesIntent"
+    },
+    {
+      "intent": "CountySearchIntent",
+      "slots": [
+        {
+          "name": "County",
+          "type": "LIST_OF_COUNTY_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "OfficeIntent",
+      "slots": [
+        {
+          "name": "Office",
+          "type": "LIST_OF_OFFICE_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "LocationIntent",
+      "slots": [
+        {
+          "name": "Office",
+          "type": "LIST_OF_OFFICE_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "HoursIntent",
+      "slots": [
+        {
+          "name": "Office",
+          "type": "LIST_OF_OFFICE_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "SettingsIntent"
+    },
+    {
+      "intent": "SetGameLengthIntent",
+      "slots": [
+        {
+          "name": "Number",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "WhichQuizIntent"
+    },
+    {
+      "intent": "DriverQuizIntent"
+    },
+    {
+      "intent": "MotorQuizIntent"
+    },
+    {
+      "intent": "NumberIntent",
+      "slots": [
+        {
+          "name": "Number",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "DontKnowIntent"
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
