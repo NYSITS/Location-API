@@ -12,7 +12,7 @@
   <div class="container">
     <h2 id="text-center">Enter Location</h2>
     <form id="location-form">
-      <input type="text" id="location-input" class="form-control form-control-lg">
+      <input type="text" id="location-input" class="form-control form-control-lg" placeholder="Home Address...">
       <br>
       <button type="submit" class="btn btn-primary btn-block">Submit</button>
     </form>
@@ -23,9 +23,32 @@
   </div>
 
   <script>
-    // Call Geocode
-    //geocode();
-
+    // var locations = {
+    //   "oswego" : {
+    //     "lat": "43.431512",
+    //     "lng": "-76.483322",
+    //   },
+    //   "clifton park" : {
+    //     "lat": "42.858472",
+    //     "lng": "-73.777742",
+    //   },
+    //   "ballston spa" : {
+    //     "lat": "42.998908",
+    //     "lng": "-73.850503",
+    //   },
+    //   "wilton" : {
+    //     "lat": "43.102048",
+    //     "lng": "-73.738103",
+    //   },
+    //   "albany" : {
+    //     "lat": "42.642577",
+    //     "lng": "-73.756299",
+    //   }
+    // };
+    var locations = [
+      {"name": "Oswego", "lat": "43.431512", "lng": "-76.483322", "city": "Oswego"},
+      {"name": "Clifton Park", "lat": "42.858472", "lng": "-73.777742", "city": "Clifton Park"}
+    ];
     // Get Location Form
     var locationForm = document.getElementById('location-form');
 
@@ -56,7 +79,7 @@
 
         // Address Components
         var addressComponents = response.data.results[0].address_components;
-        var addressComponentsOutput = '<ul class="list-group">';
+        var addressComponentsOutput = `<ul class="list-group">`;
         for (var i = 0; i < addressComponents.length; i++) {
           addressComponentsOutput += `
             <li class="list-group-item"><strong>${addressComponents[i].types[0]}</strong>: ${addressComponents[i].long_name}</li>
@@ -70,31 +93,38 @@
         var geometryOutput = `
           <ul class="list-group">
             <li class="list-group-item"><strong>Latitude</strong>: ${lat}</li>
-            <li class="list-group-item"><strong>Longitude</strong>: ${lng}</li>
+            <li class="list-group-item"><strong>Longitute</strong>: ${lng}</li>
           </ul>
         `;
 
         // Distance
-        var homeLat = response.data.results[0].geometry.location.lat;
-        var homeLng = response.data.results[0].geometry.location.lng;
-        var dmvLat = 42.858472;
-        var dmvLng = -73.777742;
-        var deltaLat = Math.abs(dmvLat - homeLat);
-        var deltaLng = Math.abs(dmvLng - homeLng);
-        var radius = 6371000;
-        var φ1 = toRadians(homeLat);
-        var φ2 = toRadians(dmvLat);
-        var Δφ = toRadians(deltaLat);
-        var Δλ = toRadians(deltaLng);
+        for (var i = 0; i < locations.length; i++) {
+          var miles = [];
+          var homeLat = response.data.results[0].geometry.location.lat;
+          var homeLng = response.data.results[0].geometry.location.lng;
+          //var office = document.getElementById('dmv-office').value;
+          var dmvLat = locations[i].lat;
+          var dmvLng = locations[i].lng;
+          var office = locations[i].city;
+          var deltaLat = Math.abs(dmvLat - homeLat);
+          var deltaLng = Math.abs(dmvLng - homeLng);
+          var R = 6371000;
+          var φ1 = toRadians(homeLat);
+          var φ2 = toRadians(dmvLat);
+          var Δφ = toRadians(deltaLat);
+          var Δλ = toRadians(deltaLng);
 
-        var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
-        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        var d = radius * c;
-        var dMiles = (d * 0.000621371192).toFixed(2);
+          var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+          var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+          var d = R * c;
+          var dMiles = (d * 0.000621371192).toFixed(2);
+          miles.push(dMiles)[i];
+        }
 
         var distanceOutput = `
           <ul class="list-group">
-            <li class="list-group-item"><strong>Distance to DMV Office</strong>: ${dMiles} miles</li>
+            <li class="list-group-item"><strong>Closest DMV Office</strong>: ${office}</li>
+            <li class="list-group-item"><strong>Distance</strong>: ${miles} miles</li>
           </ul>
         `;
 
@@ -108,6 +138,7 @@
         console.log(error);
       });
     }
+
     function toRadians(angle) {
       return angle * (Math.PI / 180);
     }
