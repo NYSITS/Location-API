@@ -1,0 +1,11 @@
+GetAddressIntent {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what's the closest office to {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what's the closest dmv office to {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what is the closest office to {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what is the closest dmv office to {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what's the nearest office to {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what's the nearest dmv office to {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what is the nearest office to {Number} {Street} {City} {State} {Zip}
+GetAddressIntent what is the nearest dmv office to {Number} {Street} {City} {State} {Zip}
+
+ClosestOfficeIntent calculate
